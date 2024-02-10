@@ -1,13 +1,448 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.708);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar */
+.nav {
+  width: 100%;
+  align-items: center;
+  display: flex;
 }
+.nav-item-container {
+  width: 56%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: end;
+  padding-right: 10%;
+}
+.nav-item-head {
+  margin-left: 2%;
+}
+.nav-item {
+  width: 10%;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(234, 226, 226);
+}
+.searchbox {
+  height: 25px;
+  margin-left: 10px;
+  padding: 8px;
+}
+.btn {
+  padding: 2px;
+  margin-left: 5px;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+.logo {
+  width: 36%;
+  margin-left: 4%;
+}
+.logo-name {
+  padding-left: 15%;
+  color: rgb(234, 226, 226);
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin: auto;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #eee;
+  border-color: #eee;
+}
+
+/* HomePage */
+.HomeApp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.homepage {
+  width: 20%;
+  margin-left: 4%;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-title {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+}
+.movie-rating {
+  margin: 2px 0 15px 0;
+  color: white;
+}
+
+/* casting */
+
+.card-background {
+  position: relative;
+  width: 92%;
+  height: 80vh;
+  border: 2px solid red;
+  margin: 0 4% 2% 4%;
+}
+.card-background-img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.movieDetails-container {
+  width: 60%;
+  position: absolute;
+  top: 12%;
+  left: 6%;
+}
+.movie-details {
+  display: flex;
+}
+.movie-poster {
+  width: 20%;
+}
+.movie-poster-img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.movie-review {
+  width: 80%;
+  align-items: flex-start;
+}
+.FC {
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.overview {
+  width: 60%;
+  color: rgb(237, 192, 107);
+}
+
+.cast-homepage {
+  width: 10%;
+  margin-left: 2%;
+}
+.cast-card {
+  width: 100%;
+}
+.cast-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.cast-name {
+  text-align: center;
+  color: aliceblue;
+}
+.PM {
+  padding: 0;
+  margin: 0;
+}
+
+/* // Small devices */
+@media (max-width: 576px) {
+      /* Navbar */
+.nav-item-container {
+  width: 86%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: end;
+}
+.nav-item-head {
+  margin-left: 2%;
+} 
+.nav-item {
+  width: 15%;
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(234, 226, 226);
+}
+.searchbox {
+  height: 25px;
+  width: 45px;
+  margin-left: 10px;
+  padding: 8px;
+}
+.btn {
+  width: 45px;
+  font-size: 12px;
+  padding: 2px;
+  margin-left: 5px;
+  background-color: rgb(49, 44, 44);
+  color: white;
+}
+.logo {
+  width: 16%;
+  margin-left: 4%;
+}
+.logo-name {
+  font-size: 15px;
+  padding-left: 15%;
+  color: rgb(234, 226, 226);
+}
+
+
+
+.card-background {
+  position: relative;
+  width: 86%;
+  height: 80vh;
+  border: 2px solid red;
+  margin: 0 4% 2% 4%;
+}
+.card-background-img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+.movieDetails-container {
+  width: 40%;
+  position: absolute;
+  top: 12%;
+  left: 6%;
+}
+.movie-details {
+  display: flex;
+}
+.movie-basic{
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+.movie-poster {
+  width: 20%;
+}
+.movie-poster-img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.movie-review {
+  width: 80%;
+  align-items: flex-start;
+
+}
+.FC {
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.overview {
+  display: none;
+  width: 60%;
+  color: rgb(237, 192, 107);
+}
+
+.cast-homepage {
+  width: 20%;
+  margin-left: 3%;
+  flex-wrap: wrap;
+}
+.cast-card {
+  width: 100%;
+}
+.cast-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.cast-name {
+  text-align: center;
+  color: aliceblue;
+}
+
+.HomeApp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.homepage {
+  width: 40%;
+  margin-left: 6.5%;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-title {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+}
+.movie-rating {
+  margin: 2px 0 15px 0;
+  color: white;
+}
+
+    }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .nav-item-container {
+    width: 86%;
+    margin-right: 4%;
+    display: flex;
+    justify-content: end;
+  }
+  .nav-item-head {
+    margin-left: 2%;
+  } 
+  .nav-item {
+    width: 15%;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(234, 226, 226);
+  }
+  .searchbox {
+    height: 25px;
+    width: 80px;
+    margin-left: 10px;
+    padding: 4px;
+  }
+  .btn {
+    width: 45px;
+    font-size: 12px;
+    padding: 6px;
+    margin-left: 5px;
+    background-color: rgb(49, 44, 44);
+    color: white;
+  }
+  .logo {
+    width: 16%;
+    margin-left: 4%;
+  }
+  .logo-name {
+    font-size: 25px;
+    padding-left: 15%;
+    color: rgb(234, 226, 226);
+  }
+  
+  
+  
+  .card-background {
+    position: relative;
+    width: 86%;
+    height: 80vh;
+    border: 2px solid red;
+    margin: 0 4% 2% 4%;
+  }
+  .card-background-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  
+  
+  .movieDetails-container {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+  }
+  .movie-details {
+    display: flex;
+  }
+  .movie-basic{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .movie-poster {
+    width: 20%;
+  }
+  .movie-poster-img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .movie-review {
+    width: 80%;
+    align-items: flex-start;
+  
+  }
+  .FC {
+    color: whitesmoke;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8px;
+  }
+  .overview {
+    width: 60%;
+    color: rgb(237, 192, 107);
+    font-size: 8px;
+
+  }
+  
+  .cast-homepage {
+    width: 20%;
+    margin-left: 3%;
+    flex-wrap: wrap;
+  }
+  .cast-card {
+    width: 100%;
+  }
+  .cast-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cast-name {
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .HomeApp {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .homepage {
+    width: 40%;
+    margin-left: 6.5%;
+  }
+  .card-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-title {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+  }
+  .movie-rating {
+    margin: 2px 0 15px 0;
+    color: white;
+  }
+  
+      }
+
+ 
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }

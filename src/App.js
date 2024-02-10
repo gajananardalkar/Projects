@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./Component/Navbar";
+import Upcoming from "./Pages/Upcoming";
+import TopRated from "./Pages/TopRated";
+import Popular from "./Pages/Popular" 
+import MovieCasting from "./Pages/MovieCasting";
+import "./index.css";
+import { Route, Routes } from "react-router-dom";
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+   
+    <Navbar/>
+    <div className="HomeApp">
+    <Routes>
+    <Route exact path='/' element = {<Popular/>}/>
+      <Route exact path='/Popular' element = {<Popular/>}/>
+      <Route exact path='/Upcoming_movies' element = {<Upcoming/>}/>
+      <Route exact path='/Top_rated' element = {<TopRated/>}/>
+      <Route exact path='/Casting' element = {<MovieCasting/>}/>
+    </Routes>
     </div>
+
+    
+    </>
   );
 }
 
