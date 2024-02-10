@@ -1,0 +1,245 @@
+
+ 
+ 
+ .gallery{
+
+    width: 100%;
+    position: relative;
+}
+.gallery.image{
+    width: 100%;
+}
+.image img{
+    position: relative;
+    padding: 10px;
+    width: 70%;
+    margin-left: 20%;
+}
+.info{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.image1{
+    width: 30%;
+    margin-left: 10%;
+}
+.image1 img{
+    width: 100%;
+}
+.about{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.port{
+    width: 100%;
+    display: flex;
+}
+.port .fluid{
+    width: 20%;
+    margin-left: 10%;
+}
+.port .fluid1{
+    width: 20%;
+    margin-left: 20%;
+}
+.container{
+    margin-top: 20px;
+    background-color: aliceblue;
+    width: 100%;
+}
+#skills{
+    margin-top: 20px;
+  
+}
+
+#rating{
+    background-color: blue;
+}
+#flex-box{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+
+
+.service{
+    text-align: center;
+    margin-top: 100px;
+    /* background-color: aliceblue; */
+
+}
+.service h5,h2,p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    width:100%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    /* margin-bottom: 10%; */
+
+}
+
+.skills .skill-provider{
+    background-color: white;
+    width: 20%;
+}
+.skills .skill-provider h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    width:auto;
+}
+
+.skills .skill-provider img{
+    justify-content:center;
+        margin-left: 10%;
+        margin-top: 10%;
+}
+
+
+.button{
+    display: flex;
+    background-color: blue;
+}
+.button .job{
+    margin-left: 20%;
+}
+.button .hire{
+    margin-left: 40%;
+    justify-content:center;
+
+}
+.hire button{
+    vertical-align: middle;
+
+}
+
+
+
+.row{
+    width: 100%;
+    display: flex;
+     margin-top: 10px; 
+     justify-content: space-evenly;
+}
+
+#picture1{
+    height: 400px;
+    background-image: url("project-1.jpg");
+    padding: 10px;
+
+}
+#picture2{
+   background-image: url("project-2.jpg");
+   height: 200px;
+   padding: 10px;
+
+}
+#picture3{
+    background-image: url("project-3.jpg");
+    
+    height: 200px;
+ 
+ }
+
+#picture4{
+    height: 200px;
+    background-image: url("project-4.jpg");
+    padding: 10px;
+}
+
+#picture5{
+    height: 200px;
+    background-image: url("project-5.jpg");
+
+}
+
+
+
+.color{
+    background-color: aliceblue;
+ 
+}
+.color .service{
+    /* margin-top: 100px; */
+}
+.port{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+.port .images{
+    width: 20%;
+    /* margin-left: 10; */
+    
+}
+.port .images img{
+    width: 100%;
+}
+
+.contact-form{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    width: 100%;
+}
+.form  .photo{
+    width: 40%;
+    margin-left: 10%;
+}
+.form  .photo img{
+    width: 100%;
+    height: 500px;
+
+}
+
+.form .contact{
+    width: 40%;
+    /* margin-left: 10%; */
+    justify-content: space-evenly;
+    background-color: aliceblue;
+
+}
+
+.form .contact .details{
+    margin-top: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.form .contact .details input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    width: 80%;
+}
+    
+
+
+
+
+
+
+.reference{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+.reference .information{
+    width: 25%;
+}
+
+
+

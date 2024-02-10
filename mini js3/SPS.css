@@ -1,0 +1,28 @@
+div{
+    border: 1px solid black;
+
+}
+
+.flex-box-container{
+    /* display: flex; */
+    border: 1px solid black;
+    justify-content: space-evenly;
+    text-align: center;
+    vertical-align: middle;
+}
+.flex-box-images,.flex-box-result{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+.flex-box-images img{
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+.flex-box-images img:hover {
+    background-color : hsl(240, 100%, 50%, 10);
+    box-shadow:10px 10px 10 10 black ;
+}

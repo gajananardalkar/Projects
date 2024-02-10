@@ -1,0 +1,38 @@
+div{
+    border: 1px solid black;
+}
+.container{
+    text-align: center;
+    /* background-color: green; */
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.container .flex-box-palyer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(221, 180, 43);
+}
+#yourbox, #botbox{
+    width: 48%;
+    padding: 2%;
+    margin: 0 auto;
+    height: 450px;
+}
+
+#yourbox img, #botbox img{
+    width: 24%;
+    padding: 5px;
+    margin: 0 auto;
+    /* display: flex; */
+}
+.container
+    .buttons{
+    margin-top: 5px;
+    border: 0px;
+
+}
+
+#resetbutton{
+    margin: 10px;
+}
+
